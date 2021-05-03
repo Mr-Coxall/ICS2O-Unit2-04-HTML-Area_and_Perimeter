@@ -4,7 +4,7 @@
 // Created on: Sep 2020
 // This script does basic math
 
-use strict;
+"use strict"
 
 function addAgeClicked () {
   let length
