@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Area and Perimeter, with JavaScript">
-    <meta name="keywords" content="mths, ics2o">
-    <meta name="author" content="Mr. Coxall">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Area and Perimeter, with a JS file</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Area and Perimeter, with JavaScript" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Mr. Coxall" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Area and Perimeter, with JavaScript</title>
   </head>
   <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
-    <h1>Area and Perimeter of a Rectangle, with JS</h1>
-    <img src="./img/rectangle.png" alt="rectangle" width="35%" height="auto">
-    <h2>Formulas</h2>
-    <h3>A = L x W</h3>
-    <h3>P = 2 x (L + W)</h3>
-    <p>
-      Please enter integers for dimensions:
-      <form action="javascript:calculate()">
-        <label for="fname">Length:</label>
-        <input type="number" id="length-of-rectangle" placeholder="e.g. 3">&nbsp;mm<br><br>
-        <label for="lname">Width:</label>
-        <input type="number" id="width-of-rectangle" placeholder="e.g. 5">&nbsp;mm<br><br>
-        <input type="submit" value="Calculate">
-      </form>
-    </p>
-    <div id="answers">
-      <div id="area"></div>
-      <div id="perimeter"></div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Area and Perimeter, with JS</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <img src="./img/rectangle.png" alt="rectangle" width="35%" height="auto" />
+        <h2>Formulas</h2>
+        <h3>A = L x W</h3>
+        <h3>P = 2 x (L + W)</h3>
+        <!-- Simple Textfield -->
+        <form action="#">
+          <p>Length</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length-of-rectangle"
+            />
+            <label class="mdl-textfield__label" for="length-of-rectangle">length ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Width</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="width-of-rectangle"
+            />
+            <label class="mdl-textfield__label" for="width-of-rectangle">width ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()"
+        >
+          Calculate
+        </button>
+        <br />
+        <p>
+          <div id="answers">
+            <div id="area"></div>
+            <div id="perimeter"></div>
+          </div>
+        </p>
+      </main>
     </div>
   </body>
 </html>
