@@ -9,8 +9,6 @@
  * This function calculates area and perimeter of rectangle.
  */
 function calculate() {
-  // this function does area and perimeter
-
   // input
   const length = parseInt(document.getElementById("length-of-rectangle").value)
   const width = parseInt(document.getElementById("width-of-rectangle").value)
