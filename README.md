@@ -3,4 +3,4 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/Mr-Coxall/ICS2O-Unit2-04-HTML-Area_and_Perimeter)](https://repl.it/github/Mr-Coxall/ICS2O-Unit2-04-HTML-Area_and_Perimeter)
 
-This website can be found at: [https://Mr-Coxall.github.io/ICS2O-Unit2-04-HTML-Area_and_Perimeter](https://Mr-Coxall.github.io/ICS2O-Unit2-04-HTML-Area_and_Perimeter)
+This site can be found at: [https://Mr-Coxall.github.io/ICS2O-Unit2-04-HTML-Area_and_Perimeter](https://Mr-Coxall.github.io/ICS2O-Unit2-04-HTML-Area_and_Perimeter)
