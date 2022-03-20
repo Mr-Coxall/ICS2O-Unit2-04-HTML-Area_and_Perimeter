@@ -53,7 +53,8 @@ rules:
             },
         },
       ],
-  }
+    "no-unused-vars": none  
+  },
 
 ##############################
 # Overrides for JSON parsing #
