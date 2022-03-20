@@ -52,8 +52,7 @@ rules:
               "FunctionExpression": true,
             },
         },
-      ],
-    "no-unused-vars": none  
+      ], 
   },
 
 ##############################
