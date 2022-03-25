@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "ICS2O-Unit2-04-HTML-Area_and_Perimeter",
+  "short_name": "ICS2O-Unit2-04-HTML-Area_and_Perimeter",
+  "start_url": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
