@@ -23,6 +23,13 @@ jobs:
           prettier_options: --write **/*.{html,css,js,ts,jsx,tsx,json}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Lighthouse
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          # run Google Lightouse check
+          # uploadArtifacts: true # save results as an action artifacts
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Run GitHub Super Linter
         uses: github/super-linter@main
         env:
