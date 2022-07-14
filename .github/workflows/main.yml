@@ -27,7 +27,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v9
         with:
           # run Google Lightouse check
-          urls: './'
+          urls: 'https://mr-coxall.github.io/ICS2O-Unit2-04-HTML-Area_and_Perimeter/'
           # uploadArtifacts: true # save results as an action artifacts
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
